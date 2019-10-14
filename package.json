@@ -2,16 +2,33 @@
   "name": "metronote",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ronnynovik.github.io",
   "dependencies": {
+    "@fontawesome/fontawesome-svg-core": "1.2.0",
+    "@fontawesome/free-regular-svg-icons": "5.1.0",
+    "@fontawesome/free-solid-svg-icons": "5.1.0",
+    "@fontawesome/react-fontawesome": "0.1.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-regular-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.5",
+    "animejs": "^3.1.0",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.12.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "react-sound": "^1.2.0",
+    "stretchy": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
