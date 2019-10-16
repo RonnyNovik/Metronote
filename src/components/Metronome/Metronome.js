@@ -1,7 +1,13 @@
-import React, { Component } from 'react';
-import Circle from './Circle/Circle';
-import { MetronomeContainer, CircleContainer, BpmDisplayContainer, Pulse, PlayFade } from './Metronome.module.scss';
-import BpmControls from '../BpmControls/BpmContols';
+import React, { Component } from "react";
+import Circle from "./Circle/Circle";
+import {
+  MetronomeContainer,
+  CircleContainer,
+  BpmDisplayContainer,
+  Pulse,
+  PlayFade
+} from "./Metronome.module.scss";
+import BpmControls from "../BpmControls/BpmContols";
 
 class Metronome extends Component {
   constructor(props) {
@@ -21,8 +27,8 @@ class Metronome extends Component {
   }
 
 
-  playClick = () => {
 
+  playClick = () => {
     // Choose the desired circle according to the beat
     const circleElement = this.CircleContainer.current.children[this.state.count];
 
@@ -85,15 +91,15 @@ class Metronome extends Component {
     });
   }
 
-  togglePlay = () => {
 
+  togglePlay = () => {
     // Invoke play or pause according to state
     if (this.state.playing) {
       this.pauseHandler();
     } else {
       this.playHandler();
     }
-  }
+  };
 
   decreaseBPM = () => {
     const { minbpm, bpm } = this.state;
@@ -114,7 +120,6 @@ class Metronome extends Component {
     // If the new bpm is below 260, increment by 1. else, set to 260
     if (bpm < maxbpm) {
       this.setState({ bpm: bpm + 1 }, this.playHandler);
-
     } else {
       this.setState({ bpm: maxbpm }, this.playHandler);
     }
@@ -155,7 +160,11 @@ class Metronome extends Component {
         </div>
 
         <div className={BpmDisplayContainer}>
-          <input onChange={this.onChangeBPM} type='text' value={this.state.bpm} />
+          <input
+            onChange={this.onChangeBPM}
+            type="text"
+            value={this.state.bpm}
+          />
           <span>bpm</span>
         </div>
 
@@ -163,13 +172,12 @@ class Metronome extends Component {
           isPlaying={this.state.playing}
           increaseBPM={this.increaseBPM}
           decreaseBPM={this.decreaseBPM}
-          togglePlay={this.togglePlay} />
+          togglePlay={this.togglePlay}
+        />
 
-        <audio ref={this.audioRef} src='sound.wav' />
-        <audio ref={this.audioRef2} src='sound2.wav' />
-
+        <audio ref={this.audioRef} src="sound.wav" />
+        <audio ref={this.audioRef2} src="sound2.wav" />
       </div>
-
     );
   }
 }
