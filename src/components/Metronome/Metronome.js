@@ -97,36 +97,27 @@ class Metronome extends Component {
 
   decreaseBPM = () => {
     const { minbpm, bpm } = this.state;
-
     //Pause the beat to reset the beat timer
     this.pauseHandler();
-
     // If the new bpm is above 0, decrement by 1. else, set to 0
     if (bpm > minbpm) {
-      this.setState({ bpm: bpm - 1 }, () => this.playHandler);
-      // this.playHandler();
+      this.setState({ bpm: bpm - 1 }, this.playHandler);
     } else {
       this.setState({ bpm: minbpm }, this.playHandler);
     }
-
   }
 
   increaseBPM = () => {
-
     const { maxbpm, bpm } = this.state;
-
     //Pause the beat to reset the beat timer
     this.pauseHandler();
-
     // If the new bpm is below 260, increment by 1. else, set to 260
     if (bpm < maxbpm) {
       this.setState({ bpm: bpm + 1 }, this.playHandler);
 
     } else {
       this.setState({ bpm: maxbpm }, this.playHandler);
-      // this.playHandler();
     }
-
   }
   onChangeBPM = (e) => {
 
@@ -140,14 +131,12 @@ class Metronome extends Component {
     if (!isNaN(newBpm) || newBpm === '') {
 
       if (newBpm > this.state.maxbpm) {
-
         // If newBpm is above 260, change it to 260 and notify the user. else, set the state of bpm as usual.
         alert('Maximum BPM allowed is 260')
         this.setState({ bpm: this.state.maxbpm }, this.playHandler);
 
       } else {
         this.setState({ bpm: newBpm }, this.playHandler);
-
       }
     }
 
