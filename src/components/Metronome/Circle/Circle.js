@@ -1,11 +1,10 @@
 import React from 'react';
 import { CircleStyle } from './Circle.module.scss';
 
-const Circle = (props) => {
-    const styles = [CircleStyle, ]
+const Circle = ( props ) => {
     
     return (
-        <div className = { styles.join(' ') }>
+        <div className = { CircleStyle }>
         </div>
     );
 };

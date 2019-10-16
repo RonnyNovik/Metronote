@@ -6,19 +6,11 @@
     height: 40vh;
 
 }
-.MetronomeContainer{
 
-    h3{
-        font-family: 'Quicksand', sans-serif;
-        font-size: 2rem;
-    }
-}
 .BpmDisplayContainer{
-    font-family: 'Quicksand', sans-serif;
     font-size: 2rem;
     margin: 1vh 0;
     input{
-        font-family: 'Quicksand', sans-serif;
         color:white;
         text-align: center;
         width: 6.4vh;
@@ -57,7 +49,7 @@
         .BpmDisplayContainer{
             font-size: 2.5rem;
             input{
-                width: 12vh;
+                width: 5vw;
                 font-size: 2.5rem;
             }
         }
