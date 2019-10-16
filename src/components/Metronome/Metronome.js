@@ -113,7 +113,6 @@ class Metronome extends Component {
     // If the new bpm is above 0, decrement by 1. else, set to 0
     if (bpm > minbpm) {
       this.setState({ bpm: bpm - 1 }, this.playHandler);
-      this.playHandler();
     } else {
       this.setState({ bpm: minbpm }, this.playHandler);
     }
