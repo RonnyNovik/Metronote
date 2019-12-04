@@ -1,6 +1,51 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [License](#license)
+* [Contact](#contact)
+* [Acknowledgements](#acknowledgements)
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+<p align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="https://i.imgur.com/mbrSL6d.png" alt="Metronote">
+  </a>
+</p>
+(Work in progress)</br>
+Metronote. is a lightweight metronome built using the popular ReactJS framework, The focus of this project was to create a clean and simple to use metronome with as little as possible features in order to create a clean and simple experience, I wanted to eliminate any distracting elements and let the musician focus on the beats themselves using a minimal UI and a prominent beat counter.
+
+From a programming standpoint, I have built metronote to practice using timed events and testing which way would produce the most accurate way combined with timed animations, Exploring the limitations setTimeout versus triggered infinite while loops Also it was nice to practice UI design and the WebAudio API a bit, Although i haven't used it's full capabilities.
+
+### Built With
+This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+* [ReactJS](https://reactjs.org/)
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+In order to run metronote locally, you must clone the repository to your machine, you can do this by running the following command in your CLI
+```sh
+$ git clone https://github.com/RonnyNovik/Metronote.git
+```
+
+### Installation and running the project locally
 
 In the project directory, you can run:
 
@@ -37,32 +82,62 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+<!-- USAGE EXAMPLES -->
+## Usage
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Using metronome is very intuitive, you pick your desired BPM and press on play, simple as that.
+You can also change your BPM and this will cause the beat counter to reset.
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+<!-- CONTRIBUTING -->
+## Contributing
 
-### Making a Progressive Web App
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
+<!-- LICENSE -->
+## License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Distributed under the MIT License. See `LICENSE` for more information.
 
-### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [MDN Web Docs](https://developer.mozilla.org)
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Pages](https://pages.github.com)
+* [Font Awesome](https://fontawesome.com)
+
+
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
+[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
+[product-screenshot]: images/screenshot.png
