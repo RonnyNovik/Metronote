@@ -29,7 +29,6 @@ Metronote. is a lightweight metronome built using the popular ReactJS framework,
 From a programming standpoint, I have built metronote to practice using timed events and testing which way would produce the most accurate way combined with timed animations, Exploring the limitations setTimeout versus triggered infinite while loops Also it was nice to practice UI design and the WebAudio API a bit, Although i haven't used it's full capabilities.
 
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [ReactJS](https://reactjs.org/)
 
 <!-- GETTING STARTED -->
@@ -46,6 +45,7 @@ $ git clone https://github.com/RonnyNovik/Metronote.git
 ```
 
 ### Installation and running the project locally
+This app was boostrapped by [create-react-app](https://github.com/facebook/create-react-app)
 
 In the project directory, you can run:
 
@@ -121,7 +121,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Pages](https://pages.github.com)
 * [Font Awesome](https://fontawesome.com)
-
+* [Create-React-App](https://github.com/facebook/create-react-app)
 
 
 
