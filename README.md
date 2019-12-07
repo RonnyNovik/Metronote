@@ -24,7 +24,7 @@
   </a>
 </p>
 (Work in progress)</br>
-Metronote. is a lightweight metronome built using the popular ReactJS framework, The focus of this project was to create a clean and simple to use metronome with as little as possible features in order to create a clean and simple experience, I wanted to eliminate any distracting elements and let the musician focus on the beats themselves using a minimal UI and a prominent beat counter.
+Metronote. is a lightweight, responsive metronome built using the popular ReactJS framework, The focus of this project was to create a clean and simple to use metronome with as little as possible features in order to create a clean and simple experience, I wanted to eliminate any distracting elements and let the musician focus on the beats themselves using a minimal UI and a prominent beat counter.
 
 From a programming standpoint, I have built metronote to practice using timed events and testing which way would produce the most accurate way combined with timed animations, Exploring the limitations setTimeout versus triggered infinite while loops Also it was nice to practice UI design and the WebAudio API a bit, Although i haven't used it's full capabilities.
 
